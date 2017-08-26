@@ -37,3 +37,6 @@
 [submodule ".vim/bundle/haskell-vim"]
 	path = .vim/bundle/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule ".vim/bundle/purescript-vim"]
+	path = .vim/bundle/purescript-vim
+	url = https://github.com/raichoo/purescript-vim.git
