@@ -1,0 +1,6 @@
+
+# Temporary
+.vim/.netrwhist
+
+# Auto-generated tag files
+.vim/tags*
