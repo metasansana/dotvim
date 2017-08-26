@@ -19,3 +19,6 @@ nnoremap <C-a> :NERDTreeTabsToggle<return>
 
 "Toggle the file explorer (netrw)
 "nnoremap <C-a> :Vexplore<return>
+
+"get to the command prompt easier
+nnoremap ; :
