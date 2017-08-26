@@ -37,3 +37,7 @@ nnoremap q <Nop>
 "vimux shortcuts
 nnoremap <leader>vz :VimuxZoomRunner<CR>
 nnoremap <leader>vr :VimuxPromptCommand<CR>
+nnoremap <leader>vl :VimuxRunLastCommand<CR>
+
+"cancel editing in insert mode
+inoremap <C-x> <ESC> u
