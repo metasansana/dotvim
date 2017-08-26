@@ -31,3 +31,9 @@
 [submodule ".vim/bundle/vim-editorconfig"]
 	path = .vim/bundle/vim-editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule "vim-haskell"]
+	path = vim-haskell
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule ".vim/bundle/haskell-vim"]
+	path = .vim/bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
