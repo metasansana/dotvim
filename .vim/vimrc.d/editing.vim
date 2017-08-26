@@ -37,3 +37,6 @@ command -nargs=0 -bar Update if &modified
 
 " Stop netrw from creating history files
 let g:netrw_dirhistmax=0
+
+"I have no idea why I have to do this
+filetype plugin indent on
