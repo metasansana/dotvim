@@ -5,3 +5,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Clean up the ui a bit
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeDirArrows = 1
+
+" Show hidden files too
+let NERDTreeShowHidden=1

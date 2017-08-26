@@ -8,4 +8,4 @@ set t_ut=
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme jellybeans
