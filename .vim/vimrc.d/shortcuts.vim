@@ -1,6 +1,7 @@
 
 "Quick save with out all the drama
 inoremap <C-s> <ESC>:update<CR>
+nnoremap <C-S> :update<CR>
 
 "vertical split
 nnoremap <silent> vv <C-w>v
@@ -22,3 +23,7 @@ nnoremap <C-a> :NERDTreeTabsToggle<return>
 
 "get to the command prompt easier
 nnoremap ; :
+
+"Quit shortcut
+nnoremap <leader>q :q<CR>
+nnoremap <leader>x :qa<CR>
