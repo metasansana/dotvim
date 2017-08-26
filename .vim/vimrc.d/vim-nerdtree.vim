@@ -8,3 +8,9 @@ let g:NERDTreeDirArrows = 1
 
 " Show hidden files too
 let NERDTreeShowHidden=1
+
+" Put the tree on the right
+let g:NERDTreeWinPos = "right"
+
+" Causes a cd to whatever directory we open
+let g:NERDTreeChDirMode=2
