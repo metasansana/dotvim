@@ -28,3 +28,6 @@
 [submodule ".vim/bundle/vim-vimux"]
 	path = .vim/bundle/vim-vimux
 	url = https://github.com/benmills/vimux.git
+[submodule ".vim/bundle/vim-editorconfig"]
+	path = .vim/bundle/vim-editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
