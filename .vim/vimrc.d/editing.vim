@@ -34,3 +34,6 @@ command -nargs=0 -bar Update if &modified
         \|        confirm write
         \|    endif
         \|endif
+
+" Stop netrw from creating history files
+let g:netrw_dirhistmax=0
