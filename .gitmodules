@@ -25,3 +25,6 @@
 [submodule ".vim/bundle/vim-obsession"]
 	path = .vim/bundle/vim-obsession
 	url = https://github.com/tpope/vim-obsession.git
+[submodule ".vim/bundle/vim-vimux"]
+	path = .vim/bundle/vim-vimux
+	url = https://github.com/benmills/vimux.git
