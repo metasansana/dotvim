@@ -41,3 +41,8 @@ nnoremap <leader>vl :VimuxRunLastCommand<CR>
 
 "cancel editing in insert mode
 inoremap <C-x> <ESC> u
+
+"fugitive shortcuts for gitting things done
+nnoremap <leader>gs :Gstatus
+nnoremap <leader>ga :Gwrite
+nnoremap <leader>gc :Gcommit
