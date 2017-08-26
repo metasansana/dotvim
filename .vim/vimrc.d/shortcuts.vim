@@ -24,6 +24,16 @@ nnoremap <C-a> :NERDTreeTabsToggle<return>
 "get to the command prompt easier
 nnoremap ; :
 
-"Quit shortcut
+"Quit shortcuts
 nnoremap <leader>q :q<CR>
 nnoremap <leader>x :qa<CR>
+nnoremap <leader>s :wqa<CR>
+nnoremap <leader>c :close<CR>
+
+"Remap recording so it does not get in the way
+nnoremap Q q
+nnoremap q <Nop>
+
+"vimux shortcuts
+nnoremap <leader>vz :VimuxZoomRunner<CR>
+nnoremap <leader>vr :VimuxPromptCommand<CR>
