@@ -10,10 +10,13 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> hh <C-w>s
 
 "switch to the next tab
-nnoremap <C-m> :tabn<CR> 
+nnoremap <C-o> :tabp<CR>
 
 "switch to the previous tab
-nnoremap <C-n> :tabp<CR>
+nnoremap <C-p> :tabn<CR>
+
+"create a new tab
+nnoremap <C-n> :tabnew<CR>
 
 "Toggle the file explorer (NerdTree)
 nnoremap <C-a> :NERDTreeTabsToggle<return>
