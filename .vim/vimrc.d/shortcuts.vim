@@ -46,3 +46,6 @@ inoremap <C-x> <ESC> u
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
 nnoremap <leader>gc :Gcommit<CR>
+
+"Run vim-autoformat on the current buffer
+nnoremap <leader>f :Autoformat<CR>
