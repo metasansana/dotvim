@@ -18,7 +18,7 @@ endfunction
 function! s:sourceLocal()
   if filereadable('.vimlocal')
     echo "Source .vimlocal file? (y/[n])"
-    if(getchar() == 'y')
+    if(nr2char(getchar()) == 'y')
       source .vimlocal
       endif
   endif
