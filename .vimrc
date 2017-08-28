@@ -15,4 +15,15 @@ function! s:SourceRecursive(path)
   endif
 endfunction
 
+function! s:sourceLocal()
+  if filereadable('.vimlocal')
+    echo "Source .vimlocal file? (y/[n])"
+    if(getchar() == 'y')
+      source .vimlocal
+      endif
+  endif
+endfunction
+
 call s:SourceRecursive(g:path_to_vimrcd . '/*.vim')
+
+call s:sourceLocal()
