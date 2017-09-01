@@ -54,3 +54,6 @@ nnoremap <leader>gc :Gcommit<CR>
 
 "Run vim-autoformat on the current buffer
 nnoremap <leader>f :Autoformat<CR>
+
+"Source a .vimlocal if in the project folder.
+nnoremap <leader>ss :SourceLocal<CR>

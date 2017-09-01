@@ -5,6 +5,8 @@ let g:path_to_vimrcd = g:path_to_dot_vim . '/vimrc.d'
 execute 'source' g:path_to_vimrcd . '/reset'
 execute 'source' g:path_to_vimrcd . '/preferences'
 
+command SourceLocal :call s:SourceLocal()
+
 function! s:SourceRecursive(path)
   if isdirectory(a:path)
     s:SourceRecursive(a:path)
@@ -15,15 +17,16 @@ function! s:SourceRecursive(path)
   endif
 endfunction
 
-function! s:sourceLocal()
+function! s:SourceLocal()
   if filereadable('.vimlocal')
     echo "Source .vimlocal file? (y/[n])"
     if(nr2char(getchar()) == 'y')
       source .vimlocal
+      echo ".vimlocal file has been sourced!"
       endif
   endif
 endfunction
 
 call s:SourceRecursive(g:path_to_vimrcd . '/*.vim')
 
-call s:sourceLocal()
+autocmd VimEnter * :SourceLocal
