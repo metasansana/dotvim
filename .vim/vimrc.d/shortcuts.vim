@@ -57,3 +57,7 @@ nnoremap <leader>f :Autoformat<CR>
 
 "Source a .vimlocal if in the project folder.
 nnoremap <leader>ss :SourceLocal<CR>
+
+" navigate quickfix errors
+nnoremap <C-j> :cn<CR>
+nnoremap <C-k> :cp<CR>
