@@ -1,0 +1,109 @@
+
+snippet import* "Declare a qualified import"
+import * as ${1:name} from '${2}';
+endsnippet
+
+snippet import "Declare an import of one or more members"
+import { ${1:imports} } from '${2}';
+endsnippet
+
+snippet classx "Declare an exported class."
+/**
+ * ${1:name} ${2:comment}
+ */
+export class $1 ${3} {
+
+  constructor(${4}) {
+
+  }
+
+}
+endsnippet
+
+snippet class "Declare a local class."
+/**
+ * ${1:name} ${2:comment}
+ */
+class $1 ${3} {
+
+  ${4}
+
+  constructor(${5}) {
+
+  }
+
+}
+endsnippet
+
+snippet prop "Declare a property on a class."
+${1:property} : ${2:type};
+endsnippet
+
+snippet propi "Create an intialized property on a class."
+${1:property} = ${2:value};
+endsnippet
+
+snippet method "Declare a method on a class."
+/**
+ * ${1:myMethod} ${2:will do good things}
+ */
+$1(${3}) : ${4} {
+
+   ${5}
+
+}
+endsnippet
+
+snippet func "Declare an exported const function."
+/**
+ * ${1:func} ${2:will do good.}
+ */
+${3:export} const $1 = ${4}(${5}) :${6} => ${7}
+endsnippet
+
+snippet funcb "Declare an exported const function with a body"
+/**
+ * ${1:func} ${2:will do good.}
+ */
+${3:export} const $1 = ${4}(${5}) :${6} => {
+
+  ${7}
+
+}
+endsnippet
+
+snippet describe
+	describe('${1}', function () {
+		${2}
+	});
+endsnippet
+
+snippet it
+	it('${1}', function() {
+		${2}
+	});
+endsnippet
+
+snippet bef
+	before( function() {
+		${1}
+	});
+endsnippet
+
+snippet befe
+	beforeEach(function(){
+		${1}
+	});
+endsnippet
+
+snippet anon "Create an anonymous function expression."
+${1:x} => ${2:body}
+endsnippet
+
+snippet anont "Create an anonymous function expression with a type param."
+(${1:x}:${2:type}) => ${3:body}
+endsnippet
+
+snippet id "identity function"
+x=>x
+endsnippet
