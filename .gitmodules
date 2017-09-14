@@ -112,3 +112,6 @@
 [submodule ".vim/bundle/jshint2"]
 	path = .vim/bundle/jshint2
 	url = https://github.com/Shutnik/jshint2.vim.git
+[submodule ".vim/bundle/ultisnips"]
+	path = .vim/bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git

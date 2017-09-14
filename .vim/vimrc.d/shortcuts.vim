@@ -59,5 +59,5 @@ nnoremap <leader>f :Autoformat<CR>
 nnoremap <leader>ss :SourceLocal<CR>
 
 " navigate quickfix errors
-nnoremap <C-j> :cn<CR>
-nnoremap <C-k> :cp<CR>
+nnoremap <leader>ne :cn<CR>
+nnoremap <leader>pe :cp<CR>
