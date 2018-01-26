@@ -42,4 +42,4 @@ let g:netrw_dirhistmax=0
 filetype plugin indent on
 
 " Use 'set list' to display whitespace, useful for debugging Makefiles.
-listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
