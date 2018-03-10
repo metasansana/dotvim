@@ -14,3 +14,7 @@ let NERDTreeShowHidden=1
 
 " Causes a cd to whatever directory we open
 let g:NERDTreeChDirMode=2
+
+" Nerdtree tabs attempt to stop window resizing when last window open
+" See https://github.com/jistr/vim-nerdtree-tabs/issues/84
+let g:nerdtree_tabs_synchronize_view = 0
