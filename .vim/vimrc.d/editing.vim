@@ -43,3 +43,6 @@ filetype plugin indent on
 
 " Use 'set list' to display whitespace, useful for debugging Makefiles.
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
+" Enables drawing of a vertical line to indicate 80 column marker
+set colorcolumn=80
