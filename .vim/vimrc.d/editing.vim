@@ -46,3 +46,6 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 
 " Enables drawing of a vertical line to indicate 80 column marker
 set colorcolumn=80
+
+"Disable the quickfix window (it's too distracting)
+set completeopt-=preview

@@ -61,3 +61,6 @@ nnoremap <leader>ss :SourceLocal<CR>
 " navigate quickfix errors
 nnoremap <leader>ne :cn<CR>
 nnoremap <leader>pe :cp<CR>
+
+" Apply YCM FixIt
+map <leader>f :YcmCompleter FixIt<CR>
