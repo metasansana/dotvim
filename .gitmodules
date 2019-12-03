@@ -118,3 +118,6 @@
 [submodule ".vim/bundle/awesome-vim-colorshemes"]
 	path = .vim/bundle/awesome-vim-colorshemes
 	url = https://github.com/rafi/awesome-vim-colorschemes.git
+[submodule ".vim/bundle/vim-wml"]
+	path = .vim/bundle/vim-wml
+	url = git@github.com:metasansana/vim-wml.git
