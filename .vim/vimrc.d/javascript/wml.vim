@@ -1,1 +1,0 @@
-autocmd BufNewFile,BufRead *.wml set ft=jinja
