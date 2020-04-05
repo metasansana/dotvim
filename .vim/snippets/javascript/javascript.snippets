@@ -26,22 +26,22 @@ snippet @prop
 	@property {${1}} ${2:name} - ${3:comment}
 
 snippet describe
-	describe('${1}', function () {
+	describe('${1}', () => {
 		${2}
 	});
 
 snippet it
-	it('${1}', function() {
+	it('${1}', () => {
 		${2}
 	});
 
 snippet bef
-	before( function() {
+	before( () => {
 		${1}
 	});
 
 snippet befe
-	beforeEach(function(){
+	beforeEach(() => {
 		${1}
 	});
 
