@@ -10,6 +10,9 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> hh <C-w>s
 
 "switch to the next tab
+"we also reassign the jump shortcuts
+nnoremap <leader>o <C-O>
+nnoremap <leader>i <C-I>
 nnoremap <C-o> :tabp<CR>
 
 "switch to the previous tab
