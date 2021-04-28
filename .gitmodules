@@ -121,3 +121,6 @@
 [submodule ".vim/bundle/vim-wml"]
 	path = .vim/bundle/vim-wml
 	url = git@github.com:metasansana/vim-wml.git
+[submodule ".vim/bundle/vim-cpp-modern"]
+	path = .vim/bundle/vim-cpp-modern
+	url = https://github.com/bfrg/vim-cpp-modern
