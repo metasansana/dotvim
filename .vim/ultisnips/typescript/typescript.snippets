@@ -1,4 +1,3 @@
-
 snippet import* "Declare a qualified import"
 import * as ${1:name} from '${2}';
 endsnippet
@@ -45,99 +44,134 @@ endsnippet
 
 snippet class "Declare an un-exported local class."
 /**
- * ${1:name} ${2:comment}
+ * ${1:name} ${2}
  */
-class $1 ${3} {
+class $1 ${3:extends} {
 
   ${4}
-
-  constructor(${5}) {
-
-  }
 
 }
 endsnippet
 
 snippet classx "Declare an exported class."
 /**
- * ${1:name} ${2:comment}
+ * ${1:name} ${2}
  */
-export class $1 ${3} {
+export class $1 ${3:extends} {
 
-  constructor(${4}) {
+  ${4}
 
-  }
+}
+endsnippet
+
+snippet cons "Declare a custom class constructor."
+constructor(${1}) {
+
+  ${2}
 
 }
 endsnippet
 
 snippet prop "Declare a property on a class."
-${1:property} : ${2:type};
+/**
+ * ${1:name} ${2:description}
+ */ 
+$1:${2:type};
 endsnippet
 
 snippet propi "Create an intialized property on a class."
-${1:property} = ${2:value};
+/**
+ * ${1:name} ${2:description}
+ */ 
+$1${2:type} = ${3};
 endsnippet
 
 snippet method "Declare a method on a class."
 /**
- * ${1:myMethod} ${2:will do good things}
+ * ${1:myMethod} ${2:method description}
  */
-$1(${3}) : ${4} {
+$1(${3}): ${4} {
 
    ${5}
 
 }
 endsnippet
 
-snippet func "Declare an exported const function."
+snippet methodi "Declare a method on a interface"
 /**
- * ${1:func} ${2:will do good.}
+ * ${1:myMethod} ${2:method description}
  */
-${3:export} const $1 = ${4}(${5}) :${6} => ${7}
+$1(${3}): ${4}
 endsnippet
 
-snippet funcb "Declare an exported const function with a body"
-/**
- * ${1:func} ${2:will do good.}
- */
-${3:export} const $1 = ${4}(${5}) :${6} => {
+snippet func "Declare an const function."
+const $1 = ${3}(${4})${5} => ${6}
+endsnippet
 
-  ${7}
+snippet funcx "Declare an exported const function."
+/**
+ * ${1:name} ${2:comment}
+ */
+export const $1 = ${3}(${4}) ${5} => ${6}
+endsnippet
+
+snippet funcb "Declare a const function with a body"
+const $1 = ${3}(${4})${5} => {
+
+  ${6}
+
+}
+endsnippet
+
+snippet funcbx "Declare an exported const function with a body"
+/**
+ * ${1:name} ${2:comment}
+ */
+export const $1 = ${3}(${4})${5} => {
+
+  ${6}
 
 }
 endsnippet
 
 snippet describe
 	describe('${1}', () => {
-		${2}
+	  ${2}
 	});
 endsnippet
 
 snippet it
 	it('${1}', () => {
-		${2}
+	  ${2}
 	});
 endsnippet
 
 snippet bef
 	before( () => {
-		${1}
+	  ${1}
 	});
 endsnippet
 
 snippet befe
 	beforeEach(() => {
-		${1}
+	  ${1}
 	});
 endsnippet
 
-snippet anon "Create an anonymous function expression."
-${1:x} => ${2:body}
+snippet => "Create a single arg arrow function"
+${1:x}=>${2}
 endsnippet
 
-snippet anont "Create an anonymous function expression with a type param."
-(${1:x}:${2:type}) => ${3:body}
+snippet ()=> "Create an arrow function with parens."
+(${1})${2}=>${3}
+endsnippet
+
+snippet ()=> "Create an arrow function with parens and a multiline body."
+(${1})${2}=> {
+
+  ${3}
+
+}
 endsnippet
 
 snippet id "identity function"

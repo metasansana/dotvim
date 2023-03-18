@@ -53,10 +53,10 @@ inoremap <C-x> <ESC> u
 "fugitive shortcuts for gitting things done
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>ga :Gwrite<CR>
-nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gc :Git commit<CR>
 
 "Run vim-autoformat on the current buffer
-nnoremap <leader>f :Autoformat<CR>
+" nnoremap <leader>f :Autoformat<CR>
 
 "Source a .vimlocal if in the project folder.
 nnoremap <leader>ss :SourceLocal<CR>
@@ -65,5 +65,6 @@ nnoremap <leader>ss :SourceLocal<CR>
 nnoremap <leader>ne :cn<CR>
 nnoremap <leader>pe :cp<CR>
 
-" Apply YCM FixIt
+" YCM commands
 map <leader>f :YcmCompleter FixIt<CR>
+map <leader>g :YcmCompleter GoTo<CR>
